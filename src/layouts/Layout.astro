@@ -1,0 +1,99 @@
+---
+// Layout.astro - Structure HTML complète du template BugZero
+export interface Props {
+  title?: string;
+}
+const { title = "BugZero — Infogérance informatique" } = Astro.props;
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" href="/bugzero-logo.png" />
+    <script src="https://cdn.tailwindcss.com" is:inline></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" is:inline></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" is:inline />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin is:inline />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet" is:inline />
+    <style is:inline>
+      a.inline-flex[class*="w-full"],
+      a.inline-flex[class*="sm:w-"],
+      button.inline-flex[class*="w-full"],
+      button.inline-flex[class*="sm:w-"] {
+        width: auto !important;
+        align-self: flex-start;
+      }
+      a.inline-flex[class*="gap-"],
+      button.inline-flex[class*="gap-"],
+      button.flex[class*="gap-"] {
+        gap: 0.75rem !important;
+      }
+      a.inline-flex,
+      button.inline-flex {
+        white-space: nowrap;
+      }
+    </style>
+    <script is:inline>
+      (function () {
+        const style = document.createElement("style");
+        style.textContent = `
+          .animate-on-scroll { animation-play-state: paused !important; }
+          .animate-on-scroll.animate { animation-play-state: running !important; }
+        `;
+        document.head.appendChild(style);
+        const once = true;
+        if (!window.__inViewIO) {
+          window.__inViewIO = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                if (once) window.__inViewIO.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.2, rootMargin: "0px 0px -10% 0px" });
+        }
+        window.initInViewAnimations = function (selector = ".animate-on-scroll") {
+          document.querySelectorAll(selector).forEach((el) => {
+            window.__inViewIO.observe(el);
+          });
+        };
+        document.addEventListener("DOMContentLoaded", () => initInViewAnimations());
+      })();
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M6V79H761" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2M6V79H761');
+    </script>
+  </head>
+  <body class="min-h-screen overflow-x-hidden bg-[#f6f5f2] text-[#090909] antialiased" style="font-family: 'Pura Std', Arial, sans-serif; background-color: #ffffff; color: #263238;">
+    <main class="overflow-hidden w-full relative">
+      <slot />
+    </main>
+    <script is:inline>
+      lucide.createIcons({
+        attrs: {
+          "stroke-width": 1.5
+        }
+      });
+    </script>
+    <style is:inline>
+      @keyframes animationIn {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+          filter: blur(8px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+          filter: blur(0px);
+        }
+      }
+    </style>
+  </body>
+</html>

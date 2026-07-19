@@ -1,0 +1,9 @@
+---
+// SectionTitle.astro
+interface Props {
+  text: string;
+}
+const { text } = Astro.props;
+---
+
+<h2 class="max-w-3xl text-4xl font-semibold tracking-tight text-[#263238] sm:text-5xl">{text}</h2>

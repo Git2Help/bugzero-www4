@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="fr"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BugZero — Infogérance informatique</title><link rel="icon" type="image/png" href="/bugzero-logo.png"><script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet"><style>
+      a.inline-flex[class*="w-full"],
+      a.inline-flex[class*="sm:w-"],
+      button.inline-flex[class*="w-full"],
+      button.inline-flex[class*="sm:w-"] {
+        width: auto !important;
+        align-self: flex-start;
+      }
+      a.inline-flex[class*="gap-"],
+      button.inline-flex[class*="gap-"],
+      button.flex[class*="gap-"] {
+        gap: 0.75rem !important;
+      }
+      a.inline-flex,
+      button.inline-flex {
+        white-space: nowrap;
+      }
+    </style><script>
+      (function () {
+        const style = document.createElement("style");
+        style.textContent = `
+          .animate-on-scroll { animation-play-state: paused !important; }
+          .animate-on-scroll.animate { animation-play-state: running !important; }
+        `;
+        document.head.appendChild(style);
+        const once = true;
+        if (!window.__inViewIO) {
+          window.__inViewIO = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                if (once) window.__inViewIO.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.2, rootMargin: "0px 0px -10% 0px" });
+        }
+        window.initInViewAnimations = function (selector = ".animate-on-scroll") {
+          document.querySelectorAll(selector).forEach((el) => {
+            window.__inViewIO.observe(el);
+          });
+        };
+        document.addEventListener("DOMContentLoaded", () => initInViewAnimations());
+      })();
+    </script><script async src="https://www.googletagmanager.com/gtag/js?id=G-2M6V79H761"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2M6V79H761');
+    </script></head> <body class="min-h-screen overflow-x-hidden bg-[#f6f5f2] text-[#090909] antialiased" style="font-family: 'Pura Std', Arial, sans-serif; background-color: #ffffff; color: #263238;"> <main class="overflow-hidden w-full relative">  <header class="flex w-full items-center justify-between px-6 py-6 sm:px-10 lg:px-16"> <a href="/" aria-label="BugZero" class="block"> <img src="/bugzero-logo.png" alt="Logo BugZero" class="h-12 w-auto sm:h-14"> </a> <nav class="hidden items-center gap-9 text-base font-medium text-[#263238] lg:flex"> <a href="/professionnel" class="transition hover:text-[#00a7e1]">Professionnel</a> <a href="/particulier" class="transition hover:text-[#00a7e1]">Particulier</a> <a href="/services" class="transition hover:text-[#00a7e1]">Services</a> <a href="#expertises" class="transition hover:text-[#00a7e1]">Expertises</a> <a href="#pourquoi" class="transition hover:text-[#00a7e1]">Pourquoi BugZero ?</a> <a href="#temoignages" class="transition hover:text-[#00a7e1]">Témoignages</a> <a href="/contact" class="rounded-md bg-[#00a7e1] px-6 py-3 text-white shadow-sm transition hover:bg-[#008fc7]">Demander un audit</a> </nav> <a href="/contact" class="rounded-md bg-[#00a7e1] px-4 py-3 text-sm font-medium text-white lg:hidden">
+Contact
+</a> </header>  <section class="grid mx-auto max-w-[112rem] items-center gap-12 px-6 pb-20 pt-12 sm:px-10 lg:grid-cols-[1fr_0.9fr] lg:px-16 lg:py-24"> <div class="max-w-3xl"> <div class="mb-7 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]"> <span class="size-3 bg-[#c8d600]"></span> <span>Infogérance informatique</span> </div> <h1 class="text-5xl font-semibold leading-[0.98] tracking-tight text-[#263238] sm:text-6xl lg:text-7xl">
+Votre informatique,<br> <span class="text-[#00a7e1]">notre sérénité.</span> </h1> <p class="mt-8 max-w-2xl text-xl leading-relaxed text-[#52636b]">
+BugZero prend en charge vos serveurs, votre sécurité et votre
+        support informatique. Concentrez-vous sur votre métier, nous nous
+        occupons du reste.
+</p> <div class="mt-10 flex flex-col gap-4 sm:flex-row"> <a href="/contact" class="inline-flex h-15 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-lg font-medium text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
+Demander un audit
+<i data-lucide="arrow-right" class="ml-3 size-5"></i> </a> <a href="/services" class="inline-flex h-15 items-center justify-center rounded-md border border-[#00a7e1] bg-white px-7 text-lg font-medium text-[#00a7e1] transition hover:bg-[#eaf8fd]">
+Nos services
+<i data-lucide="arrow-right" class="ml-3 size-5"></i> </a> </div> </div> <div class="relative min-h-[25rem] overflow-hidden rounded-3xl border border-[#00a7e1]/20 bg-[#edfaff] sm:min-h-[31rem]"> <div class="absolute inset-0 bg-[radial-gradient(circle_at_72%_35%,rgba(200,214,0,0.34),transparent_23%),radial-gradient(circle_at_35%_70%,rgba(0,167,225,0.18),transparent_43%)]"></div> <div class="absolute left-[12%] right-[12%] top-1/2 h-px bg-[#00a7e1]/25"></div> <div class="absolute left-1/2 top-[10%] h-[80%] w-px bg-[#00a7e1]/25"></div> <div class="absolute left-1/2 top-1/2 grid size-52 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border-2 border-[#00a7e1]/35 bg-white shadow-[0_25px_60px_rgba(0,167,225,0.18)] sm:size-64"> <div class="grid size-[76%] place-items-center rounded-full border border-[#c8d600] bg-[#00a7e1]"> <i data-lucide="shield-check" class="size-20 text-white sm:size-24"></i> </div> </div> <div class="absolute right-[9%] top-[12%] rounded-xl bg-white p-5 shadow-[0_16px_35px_rgba(0,0,0,0.1)]"> <p class="text-sm font-medium text-[#52636b]">Systèmes protégés</p> <p class="mt-1 text-3xl font-semibold text-[#00a7e1]">24/7</p> </div> <div class="absolute bottom-[12%] left-[8%] rounded-xl bg-[#263238] p-5 text-white shadow-xl"> <p class="text-sm text-white/70">Support réactif</p> <p class="mt-1 flex items-center text-lg font-semibold"> <span class="mr-2 size-2 rounded-full bg-[#c8d600]"></span>
+En ligne
+</p> </div> </div> </section>  <section id="expertises" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24"> <div class="mx-auto max-w-[112rem]"> <div class="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]"> <span class="size-3 bg-[#c8d600]"></span> <span>Nos expertises</span> </div> <h2 class="max-w-3xl text-4xl font-semibold tracking-tight text-[#263238] sm:text-5xl">Une informatique fiable, sécurisée et toujours disponible.</h2> <div class="mt-12 grid gap-7 lg:grid-cols-3"> <article class="rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 sm:p-10"> <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white"> <i data-lucide="cloud" class="size-7"></i> </span> <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Infogérance Cloud</h3> <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+Nous surveillons, administrons et optimisons votre environnement
+            informatique au quotidien.
+</p> </article> <article class="rounded-2xl border border-[#c8d600]/40 bg-[#f8fae9] p-8 sm:p-10"> <span class="grid size-14 place-items-center rounded-xl bg-[#c8d600] text-[#263238]"> <i data-lucide="shield" class="size-7"></i> </span> <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Sécurité &amp; Sauvegardes</h3> <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+Vos données sont protégées, sauvegardées et prêtes à être
+            restaurées en toute sérénité.
+</p> </article> <article class="rounded-2xl border border-[#263238]/10 bg-[#f4f5f5] p-8 sm:p-10"> <span class="grid size-14 place-items-center rounded-xl bg-[#263238] text-white"> <i data-lucide="headphones" class="size-7"></i> </span> <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Support IT Réactif</h3> <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+Un interlocuteur disponible pour résoudre vos incidents et
+            accompagner vos équipes.
+</p> </article> </div> </div> </section>  <section class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24"> <div class="mx-auto max-w-[112rem]"> <div class="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]"> <span class="size-3 bg-[#c8d600]"></span> <span>Comment ça marche</span> </div> <h2 class="max-w-3xl text-4xl font-semibold tracking-tight text-[#263238] sm:text-5xl">Une prise en charge simple, claire et efficace.</h2> <div class="mt-12 grid gap-7 lg:grid-cols-3"> <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10"> <p class="text-5xl font-semibold text-[#c8d600]">01</p> <span class="mt-8 grid size-12 place-items-center rounded-full bg-[#edfaff] text-[#00a7e1]"> <i data-lucide="search" class="size-6"></i> </span> <h3 class="mt-6 text-2xl font-semibold text-[#263238]">Audit Offert</h3> <p class="mt-3 text-lg leading-relaxed text-[#52636b]">
+Nous analysons votre parc informatique et identifions les priorités.
+</p> </article> <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10"> <p class="text-5xl font-semibold text-[#00a7e1]">02</p> <span class="mt-8 grid size-12 place-items-center rounded-full bg-[#f8fae9] text-[#728000]"> <i data-lucide="map" class="size-6"></i> </span> <h3 class="mt-6 text-2xl font-semibold text-[#263238]">Plan d'Action</h3> <p class="mt-3 text-lg leading-relaxed text-[#52636b]">
+Nous vous proposons une feuille de route adaptée à vos besoins et à votre budget.
+</p> </article> <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10"> <p class="text-5xl font-semibold text-[#263238]">03</p> <span class="mt-8 grid size-12 place-items-center rounded-full bg-[#edfaff] text-[#00a7e1]"> <i data-lucide="activity" class="size-6"></i> </span> <h3 class="mt-6 text-2xl font-semibold text-[#263238]">Suivi Continu</h3> <p class="mt-3 text-lg leading-relaxed text-[#52636b]">
+Nous pilotons votre informatique en continu pour prévenir les problèmes.
+</p> </article> </div> </div> </section>  <section id="pourquoi" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24"> <div class="mx-auto max-w-[112rem]"> <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]"> <div> <div class="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]"> <span class="size-3 bg-[#c8d600]"></span> <span>Pourquoi BugZero ?</span> </div> <h2 class="text-4xl font-semibold leading-tight tracking-tight text-[#263238] sm:text-5xl">
+Parce que chaque minute d'arrêt coûte de l'argent.
+</h2> <p class="mt-6 text-xl leading-relaxed text-[#52636b]">
+Avec BugZero, votre informatique devient un levier de confiance pour votre activité.
+</p> <a href="/contact" class="mt-8 inline-flex items-center font-semibold text-[#00a7e1]">
+Parlons de vos besoins
+<i data-lucide="arrow-right" class="ml-2 size-5"></i> </a> </div> <div class="grid gap-5 sm:grid-cols-2"> <article class="rounded-xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-7"> <i data-lucide="zap" class="size-7 text-[#00a7e1]"></i> <h3 class="mt-5 text-xl font-semibold text-[#263238]">Réactivité 15 min</h3> <p class="mt-2 leading-relaxed text-[#52636b]">Une réponse rapide quand votre activité en a besoin.</p> </article> <article class="rounded-xl border-l-4 border-[#c8d600] bg-[#f8fae9] p-7"> <i data-lucide="badge-check" class="size-7 text-[#728000]"></i> <h3 class="mt-5 text-xl font-semibold text-[#263238]">Experts Certifiés</h3> <p class="mt-2 leading-relaxed text-[#52636b]">Des spécialistes qualifiés pour chaque environnement.</p> </article> <article class="rounded-xl border-l-4 border-[#263238] bg-[#f4f5f5] p-7"> <i data-lucide="eye" class="size-7 text-[#263238]"></i> <h3 class="mt-5 text-xl font-semibold text-[#263238]">Transparence Totale</h3> <p class="mt-2 leading-relaxed text-[#52636b]">Des conseils clairs, des actions visibles, sans surprise.</p> </article> <article class="rounded-xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-7"> <i data-lucide="map-pin" class="size-7 text-[#00a7e1]"></i> <h3 class="mt-5 text-xl font-semibold text-[#263238]">Proximité Locale</h3> <p class="mt-2 leading-relaxed text-[#52636b]">Une équipe proche de vous, qui connaît vos enjeux.</p> </article> </div> </div> </div> </section>  <section id="temoignages" class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24"> <div class="mx-auto max-w-[112rem]"> <div class="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]"> <span class="size-3 bg-[#c8d600]"></span> <span>Témoignages</span> </div> <h2 class="max-w-3xl text-4xl font-semibold tracking-tight text-[#263238] sm:text-5xl">Ils avancent l&#39;esprit tranquille avec BugZero.</h2> <div class="mt-12 grid gap-7 lg:grid-cols-3"> <article class="flex min-h-[23rem] flex-col rounded-2xl bg-white p-8 shadow-sm"> <div class="flex gap-1 text-[#c8d600]"> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> </div> <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
+« Depuis que BugZero gère notre informatique, nous avons gagné un
+            temps précieux. L'équipe est disponible, claire et toujours efficace. »
+</blockquote> <div class="mt-auto flex items-center gap-4 pt-8"> <div class="grid size-12 place-items-center rounded-full bg-[#00a7e1] font-semibold text-white">CM</div> <div> <p class="font-semibold text-[#263238]">Claire Martin</p> <p class="text-sm text-[#52636b]">Atelier Horizon</p> </div> </div> </article> <article class="flex min-h-[23rem] flex-col rounded-2xl bg-white p-8 shadow-sm"> <div class="flex gap-1 text-[#c8d600]"> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> </div> <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
+« Le suivi est impeccable et les incidents sont résolus très
+            rapidement. Nous avons enfin un partenaire informatique en qui
+            nous avons confiance. »
+</blockquote> <div class="mt-auto flex items-center gap-4 pt-8"> <div class="grid size-12 place-items-center rounded-full bg-[#c8d600] font-semibold text-[#263238]">TD</div> <div> <p class="font-semibold text-[#263238]">Thomas Dubois</p> <p class="text-sm text-[#52636b]">Novalia Conseil</p> </div> </div> </article> <article class="flex min-h-[23rem] flex-col rounded-2xl bg-white p-8 shadow-sm"> <div class="flex gap-1 text-[#c8d600]"> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> <i data-lucide="star" class="size-5 fill-current"></i> </div> <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
+« BugZero nous accompagne avec beaucoup de pédagogie. Notre équipe
+            travaille désormais sans se soucier des problèmes techniques. »
+</blockquote> <div class="mt-auto flex items-center gap-4 pt-8"> <div class="grid size-12 place-items-center rounded-full bg-[#263238] font-semibold text-white">SL</div> <div> <p class="font-semibold text-[#263238]">Sophie Laurent</p> <p class="text-sm text-[#52636b]">Médiance Groupe</p> </div> </div> </article> </div> </div> </section>  <section class="px-6 pt-20 sm:px-10 lg:px-16 lg:pt-24"> <div class="mx-auto max-w-[112rem]"> <div class="relative overflow-hidden rounded-3xl bg-[#00a7e1] px-8 py-16 text-center text-white sm:px-14 lg:py-24"> <div class="absolute -right-20 -top-20 size-72 rounded-full border-[2rem] border-white/10"></div> <div class="absolute -bottom-28 -left-16 size-64 rounded-full border-[2rem] border-[#c8d600]/50"></div> <div class="relative mx-auto max-w-4xl"> <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[#dff8ff]">Prêt à démarrer ?</p> <h2 class="mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+Faites le premier pas vers une informatique sans bugs.
+</h2> <a href="/contact" class="mt-9 inline-flex h-15 items-center justify-center rounded-md bg-[#c8d600] px-8 text-lg font-semibold text-[#263238] shadow-lg transition hover:bg-[#d9e800]">
+Je demande mon audit
+<i data-lucide="arrow-right" class="ml-3 size-5"></i> </a> </div> </div> <footer class="mt-16 border-t border-[#263238]/15 py-10"> <div class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"> <div> <a href="/" aria-label="BugZero"> <img src="/bugzero-logo.png" alt="Logo BugZero" class="h-11 w-auto"> </a> <p class="mt-4 max-w-md leading-relaxed text-[#52636b]">
+Infogérance informatique, sécurité et support pour les
+        entreprises qui veulent avancer sereinement.
+</p> </div> <div class="flex flex-wrap gap-x-7 gap-y-3 font-medium text-[#52636b]"> <a href="/professionnel" class="hover:text-[#00a7e1]">Professionnel</a> <a href="/particulier" class="hover:text-[#00a7e1]">Particulier</a> <a href="/services" class="hover:text-[#00a7e1]">Services</a> <a href="/contact" class="hover:text-[#00a7e1]">Contact</a> <a href="/mentions-legales" class="hover:text-[#00a7e1]">Mentions légales</a> <a href="/politique-de-confidentialite" class="hover:text-[#00a7e1]">Confidentialité</a> </div> </div> <div class="mt-8 border-t border-[#263238]/10 pt-6 text-sm text-[#52636b]">
+© 2026 BugZero. Tous droits réservés.
+</div> </footer> </div> </section>  </main> <script>
+      lucide.createIcons({
+        attrs: {
+          "stroke-width": 1.5
+        }
+      });
+    </script> <style>
+      @keyframes animationIn {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+          filter: blur(8px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+          filter: blur(0px);
+        }
+      }
+    </style> </body> </html>
