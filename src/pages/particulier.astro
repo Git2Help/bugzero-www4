@@ -6,7 +6,7 @@ import SectionLabel from "../components/SectionLabel.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 ---
 
-<Layout title="BugZero — Dépannage informatique particuliers">
+<Layout title="BugZero — Dépannage informatique particuliers à Monaco">
   <Header />
 
   <!-- Section 1 : Hero -->
@@ -17,16 +17,19 @@ import SectionTitle from "../components/SectionTitle.astro";
         <span>Dépannage informatique</span>
       </div>
       <h1 class="text-5xl font-semibold leading-[0.98] tracking-tight text-[#263238] sm:text-6xl lg:text-7xl">
-        Votre PC ne marche plus ?<br />
-        <span class="text-[#00a7e1]">On s'en occupe.</span>
+        Un écran noir, un virus,<br />
+        <span class="text-[#00a7e1]">un ordi qui rame ?</span>
       </h1>
       <p class="mt-8 max-w-2xl text-xl leading-relaxed text-[#52636b]">
-        BugZero répare vos ordinateurs, résout vos problèmes logiciels et
-        vous accompagne pas à pas. À domicile ou à distance.
+        On le répare à distance en 30 minutes. Sans vous déplacer, sans stress.
       </p>
       <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-        <a href="/contact" class="inline-flex h-15 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-lg font-medium text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
-          Prendre RDV
+        <a href="tel:+33678565430" class="inline-flex h-15 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-lg font-medium text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
+          Je veux un dépannage immédiat
+          <i data-lucide="arrow-right" class="ml-3 size-5"></i>
+        </a>
+        <a href="mailto:bonjour@bugzero.fr" class="inline-flex h-15 items-center justify-center rounded-md border border-[#00a7e1] bg-white px-7 text-lg font-medium text-[#00a7e1] transition hover:bg-[#eaf8fd]">
+          Nous écrire
           <i data-lucide="arrow-right" class="ml-3 size-5"></i>
         </a>
       </div>
@@ -41,187 +44,153 @@ import SectionTitle from "../components/SectionTitle.astro";
         </div>
       </div>
       <div class="absolute right-[9%] top-[12%] rounded-xl bg-white p-5 shadow-[0_16px_35px_rgba(0,0,0,0.1)]">
-        <p class="text-sm font-medium text-[#52636b]">Interventions</p>
-        <p class="mt-1 text-3xl font-semibold text-[#00a7e1]">500+</p>
+        <p class="text-sm font-medium text-[#52636b]">Délai moyen</p>
+        <p class="mt-1 text-3xl font-semibold text-[#00a7e1]">30 min</p>
       </div>
       <div class="absolute bottom-[12%] left-[8%] rounded-xl bg-[#263238] p-5 text-white shadow-xl">
-        <p class="text-sm text-white/70">Délai moyen</p>
+        <p class="text-sm text-white/70">Satisfaction</p>
         <p class="mt-1 flex items-center text-lg font-semibold">
           <span class="mr-2 size-2 rounded-full bg-[#c8d600]"></span>
-          24h max
+          98%
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Section 2 : Dépannage à distance -->
-  <section id="depannage-distance" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
+  <!-- Section 2 : Services -->
+  <section id="expertises" class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-[112rem]">
+      <SectionLabel text="Nos prestations" />
+      <SectionTitle text="Un dépannage clair, à prix connu." />
+      <p class="mt-4 text-lg leading-relaxed text-[#52636b] max-w-3xl">
+        À distance, à domicile ou en formation : choisissez la prestation adaptée. Sans surprise sur la facture.
+      </p>
+      <div class="mt-12 grid gap-7 lg:grid-cols-4">
+        <article class="rounded-2xl border border-[#00a7e1]/15 bg-white p-8 shadow-sm sm:p-10">
+          <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white">
+            <i data-lucide="video" class="size-7"></i>
+          </span>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Dépannage à distance</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]">30 min max</p>
+          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+            Connexion sécurisée, diagnostic et résolution en direct.
+          </p>
+          <p class="mt-6 text-3xl font-semibold text-[#263238]">49€<span class="text-base font-normal text-[#52636b]"> HT</span></p>
+        </article>
+        <article class="rounded-2xl border border-[#c8d600]/40 bg-[#f8fae9] p-8 shadow-sm sm:p-10">
+          <span class="grid size-14 place-items-center rounded-xl bg-[#c8d600] text-[#263238]">
+            <i data-lucide="map-pin" class="size-7"></i>
+          </span>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Dépannage sur site</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-[#728000]">Monaco, Nice, Menton</p>
+          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+            Hardware, panne, virus. On se déplace chez vous.
+          </p>
+          <p class="mt-6 text-3xl font-semibold text-[#263238]">89€<span class="text-base font-normal text-[#52636b]"> HT/heure</span></p>
+        </article>
+        <article class="rounded-2xl border border-[#263238]/10 bg-[#f4f5f5] p-8 shadow-sm sm:p-10">
+          <span class="grid size-14 place-items-center rounded-xl bg-[#263238] text-white">
+            <i data-lucide="shield" class="size-7"></i>
+          </span>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Maintenance préventive</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-[#263238]">Pack complet</p>
+          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+            Nettoyage complet + antivirus + sauvegarde.
+          </p>
+          <p class="mt-6 text-3xl font-semibold text-[#263238]">89€<span class="text-base font-normal text-[#52636b]"> HT/heure</span></p>
+        </article>
+        <article class="rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 shadow-sm sm:p-10">
+          <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white">
+            <i data-lucide="graduation-cap" class="size-7"></i>
+          </span>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Formation sur mesure</h3>
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]">À votre rythme</p>
+          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
+            Bureautique, Internet, sauvegarde.
+          </p>
+          <p class="mt-6 text-3xl font-semibold text-[#263238]">dès 89€<span class="text-base font-normal text-[#52636b]"> HT/heure</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 : Pourquoi nous choisir -->
+  <section id="pourquoi" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-[112rem]">
       <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <SectionLabel text="À distance" />
+          <SectionLabel text="Pourquoi nous choisir" />
           <h2 class="text-4xl font-semibold leading-tight tracking-tight text-[#263238] sm:text-5xl">
-            Dépannage à distance en ~30 min.
+            On vous parle clair, on résout vite.
           </h2>
           <p class="mt-6 text-xl leading-relaxed text-[#52636b]">
-            Pas besoin de se déplacer. Notre technicien se connecte à votre
-            PC en toute sécurité et résout le problème rapidement.
+            Pas de jargon, pas de surprise sur la facture. Juste des techniciens patients et efficaces.
           </p>
+          <a href="tel:+33678565430" class="mt-8 inline-flex items-center font-semibold text-[#00a7e1]">
+            Appelez-nous
+            <i data-lucide="arrow-right" class="ml-2 size-5"></i>
+          </a>
         </div>
         <div class="grid gap-5 sm:grid-cols-2">
           <article class="rounded-xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-7">
-            <i data-lucide="lock" class="size-7 text-[#00a7e1]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Connexion sécurisée</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Connexion chiffrée de bout en bout, vous contrôlez tout.</p>
+            <i data-lucide="clock" class="size-7 text-[#00a7e1]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Intervention le jour même</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">Appelez avant 14h, on passe aujourd'hui.</p>
           </article>
           <article class="rounded-xl border-l-4 border-[#c8d600] bg-[#f8fae9] p-7">
-            <i data-lucide="clock" class="size-7 text-[#728000]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Rapide</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Intervention moyenne de 30 minutes, problème résolu.</p>
+            <i data-lucide="heart" class="size-7 text-[#728000]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Techniciens patients</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">Des explications claires, adaptées à chacun.</p>
           </article>
-          <article class="rounded-xl border-l-4 border-[#263238] bg-[#f4f5f5] p-7">
-            <i data-lucide="mouse-pointer" class="size-7 text-[#263238]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Simple</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Un clic et notre technicien prend la main en toute transparence.</p>
-          </article>
-          <article class="rounded-xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-7">
-            <i data-lucide="smartphone" class="size-7 text-[#00a7e1]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Multi-appareils</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">PC, Mac, tablette, smartphone : on s'adapte à votre appareil.</p>
+          <article class="rounded-xl border-l-4 border-[#263238] bg-[#f4f5f5] p-7 sm:col-span-2">
+            <i data-lucide="badge-check" class="size-7 text-[#263238]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Satisfait ou résolu sans frais</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">On repart que lorsque le problème est vraiment réglé, sans frais supplémentaires.</p>
           </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 3 : Dépannage sur site -->
-  <section class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
+  <!-- Section 4 : Témoignage -->
+  <section id="temoignages" class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-[112rem]">
-      <SectionLabel text="Sur site" />
-      <SectionTitle text="Nous venons chez vous." />
-      <p class="mt-4 text-lg leading-relaxed text-[#52636b] max-w-3xl">
-        Nos techniciens se déplacent à Monaco, Nice et Menton pour résoudre
-        vos problèmes matériels et logiciels.
-      </p>
+      <SectionLabel text="Témoignage" />
+      <SectionTitle text="Ce que nos clients en disent." />
       <div class="mt-12 grid gap-7 lg:grid-cols-3">
-        <article class="rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white">
-            <i data-lucide="map-pin" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Monaco</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Intervention dans tout Monaco, de Fontvieille au Larvotto.
-          </p>
+        <article class="flex min-h-[18rem] flex-col rounded-2xl bg-white p-8 shadow-sm lg:col-span-1">
+          <div class="flex gap-1 text-[#c8d600]">
+            <i data-lucide="star" class="size-5 fill-current"></i>
+            <i data-lucide="star" class="size-5 fill-current"></i>
+            <i data-lucide="star" class="size-5 fill-current"></i>
+            <i data-lucide="star" class="size-5 fill-current"></i>
+            <i data-lucide="star" class="size-5 fill-current"></i>
+          </div>
+          <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
+            « Alex a éliminé toutes les pubs de mon PC en visio. Magique ! »
+          </blockquote>
+          <div class="mt-auto flex items-center gap-4 pt-8">
+            <div class="grid size-12 place-items-center rounded-full bg-[#c8d600] font-semibold text-[#263238]">M</div>
+            <div>
+              <p class="font-semibold text-[#263238]">Marc</p>
+              <p class="text-sm text-[#52636b]">Retraité à Monaco</p>
+            </div>
+          </div>
         </article>
-        <article class="rounded-2xl border border-[#c8d600]/40 bg-[#f8fae9] p-8 sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#c8d600] text-[#263238]">
-            <i data-lucide="map-pin" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Nice</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Dépannage à domicile sur Nice et sa métropole.
+        <article class="flex min-h-[18rem] flex-col justify-center rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 lg:col-span-2">
+          <p class="text-lg leading-relaxed text-[#52636b]">
+            Un souci informatique ? On répond dans l'heure. À distance ou à domicile, à Monaco, Nice et Menton.
           </p>
-        </article>
-        <article class="rounded-2xl border border-[#263238]/10 bg-[#f4f5f5] p-8 sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#263238] text-white">
-            <i data-lucide="map-pin" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Menton</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Nous intervenons également à Menton et ses alentours.
-          </p>
+          <a href="tel:+33678565430" class="mt-6 inline-flex h-14 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-base font-medium text-white shadow-sm transition hover:bg-[#008fc7]">
+            Appeler le 06 78 56 54 30
+            <i data-lucide="phone" class="ml-2 size-5"></i>
+          </a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Section 4 : Maintenance préventive -->
-  <section class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
-    <div class="mx-auto max-w-[112rem]">
-      <SectionLabel text="Maintenance" />
-      <SectionTitle text="Gardez votre PC en bonne santé." />
-      <p class="mt-4 text-lg leading-relaxed text-[#52636b] max-w-3xl">
-        Un entretien régulier pour prolonger la durée de vie de votre
-        équipement et éviter les mauvaises surprises.
-      </p>
-      <div class="mt-12 grid gap-7 lg:grid-cols-3">
-        <article class="rounded-2xl border border-[#00a7e1]/15 bg-white p-8 shadow-sm sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white">
-            <i data-lucide="spray-can" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Nettoyage</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Nettoyage physique et logiciel de votre ordinateur pour des
-            performances optimales.
-          </p>
-        </article>
-        <article class="rounded-2xl border border-[#c8d600]/40 bg-white p-8 shadow-sm sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#c8d600] text-[#263238]">
-            <i data-lucide="shield" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Antivirus</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Installation et configuration d'un antivirus fiable et léger.
-          </p>
-        </article>
-        <article class="rounded-2xl border border-[#263238]/10 bg-[#f4f5f5] p-8 sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#263238] text-white">
-            <i data-lucide="hard-drive" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Sauvegarde</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Sauvegarde automatique de vos fichiers importants, en local ou
-            dans le cloud.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 5 : Formation -->
-  <section class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
-    <div class="mx-auto max-w-[112rem]">
-      <SectionLabel text="Formation" />
-      <SectionTitle text="Apprenez à votre rythme." />
-      <p class="mt-4 text-lg leading-relaxed text-[#52636b] max-w-3xl">
-        Que vous soyez débutant ou utilisateur confirmé, nous vous formons
-        sur les outils du quotidien.
-      </p>
-      <div class="mt-12 grid gap-7 lg:grid-cols-3">
-        <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white">
-            <i data-lucide="file-text" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Traitement de texte</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Maîtrisez Word, LibreOffice ou Google Docs pour vos documents
-            quotidiens.
-          </p>
-        </article>
-        <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#c8d600] text-[#263238]">
-            <i data-lucide="table" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Tableur &amp; Compta</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Excel, Google Sheets ou logiciel comptable : gérez vos chiffres
-            en toute simplicité.
-          </p>
-        </article>
-        <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <span class="grid size-14 place-items-center rounded-xl bg-[#263238] text-white">
-            <i data-lucide="monitor" class="size-7"></i>
-          </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Initiation PC</h3>
-          <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Les bases de l'ordinateur, d'internet et de la sécurité numérique.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 6 : Contact + Footer -->
+  <!-- Section 5 : CTA + Footer -->
   <section class="px-6 pt-20 sm:px-10 lg:px-16 lg:pt-24">
     <div class="mx-auto max-w-[112rem]">
       <div class="relative overflow-hidden rounded-3xl bg-[#00a7e1] px-8 py-16 text-center text-white sm:px-14 lg:py-24">
@@ -230,13 +199,10 @@ import SectionTitle from "../components/SectionTitle.astro";
         <div class="relative mx-auto max-w-4xl">
           <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[#dff8ff]">Besoin d'aide ?</p>
           <h2 class="mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            On prend rendez-vous ?
+            Appelez le 06 78 56 54 30 ou prenez rendez-vous en ligne.
           </h2>
-          <p class="mt-4 text-lg text-white/80">
-            06 78 56 54 30 — Intervention à Monaco, Nice, Menton — Lun-Ven 9h-18h
-          </p>
-          <a href="/contact" class="mt-9 inline-flex h-15 items-center justify-center rounded-md bg-[#c8d600] px-8 text-lg font-semibold text-[#263238] shadow-lg transition hover:bg-[#d9e800]">
-            Prendre RDV
+          <a href="tel:+33678565430" class="mt-9 inline-flex h-15 items-center justify-center rounded-md bg-[#c8d600] px-8 text-lg font-semibold text-[#263238] shadow-lg transition hover:bg-[#d9e800]">
+            Je veux un dépannage immédiat
             <i data-lucide="arrow-right" class="ml-3 size-5"></i>
           </a>
         </div>

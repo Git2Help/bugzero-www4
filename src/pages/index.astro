@@ -6,7 +6,7 @@ import SectionLabel from "../components/SectionLabel.astro";
 import SectionTitle from "../components/SectionTitle.astro";
 ---
 
-<Layout>
+<Layout title="BugZero — Dépannage et infogérance informatique à Monaco">
   <Header />
 
   <!-- Hero -->
@@ -14,24 +14,22 @@ import SectionTitle from "../components/SectionTitle.astro";
     <div class="max-w-3xl">
       <div class="mb-7 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]">
         <span class="size-3 bg-[#c8d600]"></span>
-        <span>Infogérance informatique</span>
+        <span>Dépannage & infogérance à Monaco</span>
       </div>
       <h1 class="text-5xl font-semibold leading-[0.98] tracking-tight text-[#263238] sm:text-6xl lg:text-7xl">
-        Votre informatique,<br />
-        <span class="text-[#00a7e1]">notre sérénité.</span>
+        Votre PC plante,<br />
+        <span class="text-[#00a7e1]">votre entreprise est à l'arrêt ?</span>
       </h1>
       <p class="mt-8 max-w-2xl text-xl leading-relaxed text-[#52636b]">
-        BugZero prend en charge vos serveurs, votre sécurité et votre
-        support informatique. Concentrez-vous sur votre métier, nous nous
-        occupons du reste.
+        Bugzero intervient en 30 minutes. Diagnostic gratuit, solutions immédiates.
       </p>
       <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-        <a href="/contact" class="inline-flex h-15 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-lg font-medium text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
-          Demander un audit
+        <a href="tel:+33678565430" class="inline-flex h-15 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-lg font-medium text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
+          Je règle mon problème maintenant
           <i data-lucide="arrow-right" class="ml-3 size-5"></i>
         </a>
-        <a href="/services" class="inline-flex h-15 items-center justify-center rounded-md border border-[#00a7e1] bg-white px-7 text-lg font-medium text-[#00a7e1] transition hover:bg-[#eaf8fd]">
-          Nos services
+        <a href="mailto:bonjour@bugzero.fr" class="inline-flex h-15 items-center justify-center rounded-md border border-[#00a7e1] bg-white px-7 text-lg font-medium text-[#00a7e1] transition hover:bg-[#eaf8fd]">
+          Nous écrire
           <i data-lucide="arrow-right" class="ml-3 size-5"></i>
         </a>
       </div>
@@ -46,149 +44,118 @@ import SectionTitle from "../components/SectionTitle.astro";
         </div>
       </div>
       <div class="absolute right-[9%] top-[12%] rounded-xl bg-white p-5 shadow-[0_16px_35px_rgba(0,0,0,0.1)]">
-        <p class="text-sm font-medium text-[#52636b]">Systèmes protégés</p>
-        <p class="mt-1 text-3xl font-semibold text-[#00a7e1]">24/7</p>
+        <p class="text-sm font-medium text-[#52636b]">Intervention</p>
+        <p class="mt-1 text-3xl font-semibold text-[#00a7e1]">30 min</p>
       </div>
       <div class="absolute bottom-[12%] left-[8%] rounded-xl bg-[#263238] p-5 text-white shadow-xl">
-        <p class="text-sm text-white/70">Support réactif</p>
+        <p class="text-sm text-white/70">Satisfaction</p>
         <p class="mt-1 flex items-center text-lg font-semibold">
           <span class="mr-2 size-2 rounded-full bg-[#c8d600]"></span>
-          En ligne
+          98%
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Expertises -->
+  <!-- 3 cartes services -->
   <section id="expertises" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-[112rem]">
-      <SectionLabel text="Nos expertises" />
-      <SectionTitle text="Une informatique fiable, sécurisée et toujours disponible." />
+      <SectionLabel text="Nos services" />
+      <SectionTitle text="Particuliers, professionnels, subventions : un seul interlocuteur." />
       <div class="mt-12 grid gap-7 lg:grid-cols-3">
         <article class="rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 sm:p-10">
           <span class="grid size-14 place-items-center rounded-xl bg-[#00a7e1] text-white">
-            <i data-lucide="cloud" class="size-7"></i>
+            <i data-lucide="user" class="size-7"></i>
           </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Infogérance Cloud</h3>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Particuliers</h3>
           <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Nous surveillons, administrons et optimisons votre environnement
-            informatique au quotidien.
+            Dépannage express, installation, conseils. On s'occupe de tout, à distance ou à domicile.
           </p>
+          <a href="/particulier" class="mt-6 inline-flex items-center font-semibold text-[#00a7e1]">
+            Voir les prestations
+            <i data-lucide="arrow-right" class="ml-2 size-5"></i>
+          </a>
         </article>
         <article class="rounded-2xl border border-[#c8d600]/40 bg-[#f8fae9] p-8 sm:p-10">
           <span class="grid size-14 place-items-center rounded-xl bg-[#c8d600] text-[#263238]">
-            <i data-lucide="shield" class="size-7"></i>
+            <i data-lucide="building-2" class="size-7"></i>
           </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Sécurité &amp; Sauvegardes</h3>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Professionnels</h3>
           <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Vos données sont protégées, sauvegardées et prêtes à être
-            restaurées en toute sérénité.
+            Infogérance, cybersécurité, visibilité web. Votre service IT clé-en-main, sans engagement.
           </p>
+          <a href="/professionnel" class="mt-6 inline-flex items-center font-semibold text-[#00a7e1]">
+            Voir les formules
+            <i data-lucide="arrow-right" class="ml-2 size-5"></i>
+          </a>
         </article>
         <article class="rounded-2xl border border-[#263238]/10 bg-[#f4f5f5] p-8 sm:p-10">
           <span class="grid size-14 place-items-center rounded-xl bg-[#263238] text-white">
-            <i data-lucide="headphones" class="size-7"></i>
+            <i data-lucide="banknote" class="size-7"></i>
           </span>
-          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Support IT Réactif</h3>
+          <h3 class="mt-7 text-2xl font-semibold text-[#263238]">Fonds Bleu (Monaco)</h3>
           <p class="mt-4 text-lg leading-relaxed text-[#52636b]">
-            Un interlocuteur disponible pour résoudre vos incidents et
-            accompagner vos équipes.
+            Jusqu'à 70% de subventions pour votre site, SEO, appli. On monte le dossier gratuitement.
           </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Comment ça marche -->
-  <section class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
-    <div class="mx-auto max-w-[112rem]">
-      <SectionLabel text="Comment ça marche" />
-      <SectionTitle text="Une prise en charge simple, claire et efficace." />
-      <div class="mt-12 grid gap-7 lg:grid-cols-3">
-        <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <p class="text-5xl font-semibold text-[#c8d600]">01</p>
-          <span class="mt-8 grid size-12 place-items-center rounded-full bg-[#edfaff] text-[#00a7e1]">
-            <i data-lucide="search" class="size-6"></i>
-          </span>
-          <h3 class="mt-6 text-2xl font-semibold text-[#263238]">Audit Offert</h3>
-          <p class="mt-3 text-lg leading-relaxed text-[#52636b]">
-            Nous analysons votre parc informatique et identifions les priorités.
-          </p>
-        </article>
-        <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <p class="text-5xl font-semibold text-[#00a7e1]">02</p>
-          <span class="mt-8 grid size-12 place-items-center rounded-full bg-[#f8fae9] text-[#728000]">
-            <i data-lucide="map" class="size-6"></i>
-          </span>
-          <h3 class="mt-6 text-2xl font-semibold text-[#263238]">Plan d'Action</h3>
-          <p class="mt-3 text-lg leading-relaxed text-[#52636b]">
-            Nous vous proposons une feuille de route adaptée à vos besoins et à votre budget.
-          </p>
-        </article>
-        <article class="rounded-2xl bg-white p-8 shadow-sm sm:p-10">
-          <p class="text-5xl font-semibold text-[#263238]">03</p>
-          <span class="mt-8 grid size-12 place-items-center rounded-full bg-[#edfaff] text-[#00a7e1]">
-            <i data-lucide="activity" class="size-6"></i>
-          </span>
-          <h3 class="mt-6 text-2xl font-semibold text-[#263238]">Suivi Continu</h3>
-          <p class="mt-3 text-lg leading-relaxed text-[#52636b]">
-            Nous pilotons votre informatique en continu pour prévenir les problèmes.
-          </p>
+          <a href="/professionnel/creation-site" class="mt-6 inline-flex items-center font-semibold text-[#00a7e1]">
+            En profiter
+            <i data-lucide="arrow-right" class="ml-2 size-5"></i>
+          </a>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Pourquoi BugZero -->
-  <section id="pourquoi" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
+  <section id="pourquoi" class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-[112rem]">
       <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
           <SectionLabel text="Pourquoi BugZero ?" />
           <h2 class="text-4xl font-semibold leading-tight tracking-tight text-[#263238] sm:text-5xl">
-            Parce que chaque minute d'arrêt coûte de l'argent.
+            Pourquoi nos clients nous recommandent
           </h2>
           <p class="mt-6 text-xl leading-relaxed text-[#52636b]">
-            Avec BugZero, votre informatique devient un levier de confiance pour votre activité.
+            15 ans d'expertise locale, une réactivité qui sauve votre business.
           </p>
-          <a href="/contact" class="mt-8 inline-flex items-center font-semibold text-[#00a7e1]">
+          <a href="tel:+33678565430" class="mt-8 inline-flex items-center font-semibold text-[#00a7e1]">
             Parlons de vos besoins
             <i data-lucide="arrow-right" class="ml-2 size-5"></i>
           </a>
         </div>
         <div class="grid gap-5 sm:grid-cols-2">
           <article class="rounded-xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-7">
-            <i data-lucide="zap" class="size-7 text-[#00a7e1]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Réactivité 15 min</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Une réponse rapide quand votre activité en a besoin.</p>
+            <i data-lucide="award" class="size-7 text-[#00a7e1]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">15 ans d'expertise</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">À Monaco et PACA, on connaît le terrain.</p>
           </article>
           <article class="rounded-xl border-l-4 border-[#c8d600] bg-[#f8fae9] p-7">
-            <i data-lucide="badge-check" class="size-7 text-[#728000]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Experts Certifiés</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Des spécialistes qualifiés pour chaque environnement.</p>
+            <i data-lucide="zap" class="size-7 text-[#728000]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Intervention &lt; 2h</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">Appelez avant 14h, on intervient aujourd'hui.</p>
           </article>
           <article class="rounded-xl border-l-4 border-[#263238] bg-[#f4f5f5] p-7">
-            <i data-lucide="eye" class="size-7 text-[#263238]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Transparence Totale</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Des conseils clairs, des actions visibles, sans surprise.</p>
+            <i data-lucide="badge-check" class="size-7 text-[#263238]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">800+ dépannages</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">98% de satisfaction client.</p>
           </article>
           <article class="rounded-xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-7">
-            <i data-lucide="map-pin" class="size-7 text-[#00a7e1]"></i>
-            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Proximité Locale</h3>
-            <p class="mt-2 leading-relaxed text-[#52636b]">Une équipe proche de vous, qui connaît vos enjeux.</p>
+            <i data-lucide="handshake" class="size-7 text-[#00a7e1]"></i>
+            <h3 class="mt-5 text-xl font-semibold text-[#263238]">Partenaires officiels</h3>
+            <p class="mt-2 leading-relaxed text-[#52636b]">Monaco Cloud, Dell, Bitdefender.</p>
           </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Témoignages -->
-  <section id="temoignages" class="bg-[#f4f5f5] px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
+  <!-- Témoignage -->
+  <section id="temoignages" class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
     <div class="mx-auto max-w-[112rem]">
-      <SectionLabel text="Témoignages" />
-      <SectionTitle text="Ils avancent l'esprit tranquille avec BugZero." />
+      <SectionLabel text="Témoignage" />
+      <SectionTitle text="Ils ont retrouvé leurs fichiers. Et leur sérénité." />
       <div class="mt-12 grid gap-7 lg:grid-cols-3">
-        <article class="flex min-h-[23rem] flex-col rounded-2xl bg-white p-8 shadow-sm">
+        <article class="flex min-h-[18rem] flex-col rounded-2xl bg-white p-8 shadow-sm lg:col-span-1">
           <div class="flex gap-1 text-[#c8d600]">
             <i data-lucide="star" class="size-5 fill-current"></i>
             <i data-lucide="star" class="size-5 fill-current"></i>
@@ -197,57 +164,24 @@ import SectionTitle from "../components/SectionTitle.astro";
             <i data-lucide="star" class="size-5 fill-current"></i>
           </div>
           <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
-            « Depuis que BugZero gère notre informatique, nous avons gagné un
-            temps précieux. L'équipe est disponible, claire et toujours efficace. »
+            « Frédéric a récupéré tous mes fichiers en 45 minutes. Incroyable réactivité ! »
           </blockquote>
           <div class="mt-auto flex items-center gap-4 pt-8">
-            <div class="grid size-12 place-items-center rounded-full bg-[#00a7e1] font-semibold text-white">CM</div>
+            <div class="grid size-12 place-items-center rounded-full bg-[#00a7e1] font-semibold text-white">S</div>
             <div>
-              <p class="font-semibold text-[#263238]">Claire Martin</p>
-              <p class="text-sm text-[#52636b]">Atelier Horizon</p>
+              <p class="font-semibold text-[#263238]">Sophie</p>
+              <p class="text-sm text-[#52636b]">Particulière à Nice</p>
             </div>
           </div>
         </article>
-        <article class="flex min-h-[23rem] flex-col rounded-2xl bg-white p-8 shadow-sm">
-          <div class="flex gap-1 text-[#c8d600]">
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-          </div>
-          <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
-            « Le suivi est impeccable et les incidents sont résolus très
-            rapidement. Nous avons enfin un partenaire informatique en qui
-            nous avons confiance. »
-          </blockquote>
-          <div class="mt-auto flex items-center gap-4 pt-8">
-            <div class="grid size-12 place-items-center rounded-full bg-[#c8d600] font-semibold text-[#263238]">TD</div>
-            <div>
-              <p class="font-semibold text-[#263238]">Thomas Dubois</p>
-              <p class="text-sm text-[#52636b]">Novalia Conseil</p>
-            </div>
-          </div>
-        </article>
-        <article class="flex min-h-[23rem] flex-col rounded-2xl bg-white p-8 shadow-sm">
-          <div class="flex gap-1 text-[#c8d600]">
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-            <i data-lucide="star" class="size-5 fill-current"></i>
-          </div>
-          <blockquote class="mt-7 text-lg leading-relaxed text-[#52636b]">
-            « BugZero nous accompagne avec beaucoup de pédagogie. Notre équipe
-            travaille désormais sans se soucier des problèmes techniques. »
-          </blockquote>
-          <div class="mt-auto flex items-center gap-4 pt-8">
-            <div class="grid size-12 place-items-center rounded-full bg-[#263238] font-semibold text-white">SL</div>
-            <div>
-              <p class="font-semibold text-[#263238]">Sophie Laurent</p>
-              <p class="text-sm text-[#52636b]">Médiance Groupe</p>
-            </div>
-          </div>
+        <article class="flex min-h-[18rem] flex-col justify-center rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 lg:col-span-2">
+          <p class="text-lg leading-relaxed text-[#52636b]">
+            Besoin d'une intervention rapide ? Notre équipe répond dans l'heure et se déplace à Monaco, Nice et Menton.
+          </p>
+          <a href="tel:+33678565430" class="mt-6 inline-flex h-14 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-base font-medium text-white shadow-sm transition hover:bg-[#008fc7]">
+            Appeler le 06 78 56 54 30
+            <i data-lucide="phone" class="ml-2 size-5"></i>
+          </a>
         </article>
       </div>
     </div>
@@ -262,10 +196,13 @@ import SectionTitle from "../components/SectionTitle.astro";
         <div class="relative mx-auto max-w-4xl">
           <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[#dff8ff]">Prêt à démarrer ?</p>
           <h2 class="mt-5 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Faites le premier pas vers une informatique sans bugs.
+            Un problème informatique ne peut pas attendre. Nous non plus.
           </h2>
-          <a href="/contact" class="mt-9 inline-flex h-15 items-center justify-center rounded-md bg-[#c8d600] px-8 text-lg font-semibold text-[#263238] shadow-lg transition hover:bg-[#d9e800]">
-            Je demande mon audit
+          <p class="mt-4 text-lg text-white/80">
+            06 78 56 54 30 | bonjour@bugzero.fr | 9, Allée Lazare Sauvaigo, 98000 Monaco
+          </p>
+          <a href="tel:+33678565430" class="mt-9 inline-flex h-15 items-center justify-center rounded-md bg-[#c8d600] px-8 text-lg font-semibold text-[#263238] shadow-lg transition hover:bg-[#d9e800]">
+            Je règle mon problème maintenant
             <i data-lucide="arrow-right" class="ml-3 size-5"></i>
           </a>
         </div>

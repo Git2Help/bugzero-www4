@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SectionLabel from "../components/SectionLabel.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+---
+
+<Layout title="BugZero — Mentions légales">
+  <Header />
+
+  <!-- Hero -->
+  <section class="px-6 pt-12 pb-10 sm:px-10 lg:px-16 lg:pt-20">
+    <div class="mx-auto max-w-[112rem]">
+      <SectionLabel text="Informations légales" />
+      <h1 class="max-w-3xl text-4xl font-semibold tracking-tight text-[#263238] sm:text-5xl lg:text-6xl">
+        Mentions légales
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-[#52636b]">
+        Éditeur, responsable de publication et hébergement du site bugzero.fr.
+      </p>
+    </div>
+  </section>
+
+  <!-- Corps -->
+  <section class="px-6 pb-20 sm:px-10 lg:px-16 lg:pb-24">
+    <div class="mx-auto max-w-[112rem]">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <article class="rounded-2xl border border-[#00a7e1]/15 bg-[#edfaff] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">Éditeur du site</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Helperiance / Bugzero<br />
+            9, Allée Lazare Sauvaigo, 98000 Monaco<br />
+            Email : <a href="mailto:bonjour@bugzero.fr" class="font-semibold text-[#00a7e1] hover:underline">bonjour@bugzero.fr</a><br />
+            Téléphone : <a href="tel:+33678565430" class="font-semibold text-[#00a7e1] hover:underline">06 78 56 54 30</a>
+          </p>
+        </article>
+        <article class="rounded-2xl border border-[#c8d600]/40 bg-[#f8fae9] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">Responsable de publication</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Johan Chauvet<br />
+            En qualité de CEO de Helperiance.<br />
+            Email : <a href="mailto:bonjour@bugzero.fr" class="font-semibold text-[#00a7e1] hover:underline">bonjour@bugzero.fr</a>
+          </p>
+        </article>
+        <article class="rounded-2xl border border-[#263238]/10 bg-[#f4f5f5] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">Hébergement</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Cloudflare Pages<br />
+            Cloudflare, Inc.<br />
+            101 Townsend Street, San Francisco, CA 94107, États-Unis.
+          </p>
+        </article>
+        <article class="rounded-2xl border border-[#00a7e1]/15 bg-white p-8 shadow-sm sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">Propriété intellectuelle</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            L'ensemble des contenus présents sur ce site (textes, logos, visuels, structure) est la propriété de Helperiance / Bugzero. Tous droits réservés. Toute reproduction, même partielle, est interdite sans autorisation écrite préalable.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="px-6 pb-16 sm:px-10 lg:px-16">
+    <div class="mx-auto max-w-[112rem]">
+      <Footer />
+    </div>
+  </section>
+</Layout>

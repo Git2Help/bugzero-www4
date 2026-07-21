@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SectionLabel from "../components/SectionLabel.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+---
+
+<Layout title="BugZero — Politique de confidentialité">
+  <Header />
+
+  <!-- Hero -->
+  <section class="px-6 pt-12 pb-10 sm:px-10 lg:px-16 lg:pt-20">
+    <div class="mx-auto max-w-[112rem]">
+      <SectionLabel text="RGPD" />
+      <h1 class="max-w-3xl text-4xl font-semibold tracking-tight text-[#263238] sm:text-5xl lg:text-6xl">
+        Politique de confidentialité
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-[#52636b]">
+        Comment Bugzero collecte, utilise et protège vos données personnelles, conformément au RGPD.
+      </p>
+    </div>
+  </section>
+
+  <!-- Corps -->
+  <section class="px-6 pb-20 sm:px-10 lg:px-16 lg:pb-24">
+    <div class="mx-auto max-w-[112rem]">
+      <div class="space-y-7">
+        <article class="rounded-2xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">1. Données collectées</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Bugzero collecte les données que vous nous communiquez : nom, prénom, adresse email, numéro de téléphone, et toute information nécessaire à la fourniture de nos services (formulaire de contact, demandes de devis, échanges contractuels).
+          </p>
+        </article>
+        <article class="rounded-2xl border-l-4 border-[#c8d600] bg-[#f8fae9] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">2. Finalité &amp; base légale</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Vos données sont utilisées pour répondre à vos demandes, fournir nos services d'infogérance et de dépannage, et assurer le suivi commercial. Base légale : consentement, exécution contractuelle et intérêt légitime.
+          </p>
+        </article>
+        <article class="rounded-2xl border-l-4 border-[#263238] bg-[#f4f5f5] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">3. Destinataires</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Vos données sont destinées aux équipes internes de Bugzero / Helperiance. Elles ne sont jamais vendues ni cédées à des tiers à des fins commerciales.
+          </p>
+        </article>
+        <article class="rounded-2xl border-l-4 border-[#00a7e1] bg-[#edfaff] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">4. Durée de conservation</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Vos données sont conservées le temps nécessaire à la fourniture des services et au respect des obligations légales et comptables, puis supprimées ou anonymisées.
+          </p>
+        </article>
+        <article class="rounded-2xl border-l-4 border-[#c8d600] bg-[#f8fae9] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">5. Vos droits</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits à tout moment.
+          </p>
+        </article>
+        <article class="rounded-2xl border-l-4 border-[#263238] bg-[#f4f5f5] p-8 sm:p-10">
+          <h2 class="text-2xl font-semibold text-[#263238]">6. Contact DPO</h2>
+          <p class="mt-4 leading-relaxed text-[#52636b]">
+            Pour toute demande relative à vos données : <a href="mailto:bonjour@bugzero.fr" class="font-semibold text-[#00a7e1] hover:underline">bonjour@bugzero.fr</a> ou par téléphone au <a href="tel:+33678565430" class="font-semibold text-[#00a7e1] hover:underline">06 78 56 54 30</a>.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="px-6 pb-16 sm:px-10 lg:px-16">
+    <div class="mx-auto max-w-[112rem]">
+      <Footer />
+    </div>
+  </section>
+</Layout>
