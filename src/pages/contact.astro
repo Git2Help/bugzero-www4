@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import SectionLabel from "../components/SectionLabel.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+---
+
+<Layout title="BugZero — Contactez-nous">
+  <Header />
+
+  <!-- Hero -->
+  <section class="grid mx-auto max-w-[112rem] items-center gap-12 px-6 pb-20 pt-12 sm:px-10 lg:grid-cols-[1fr_0.9fr] lg:px-16 lg:py-24">
+    <div class="max-w-3xl">
+      <div class="mb-7 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#00a7e1]">
+        <span class="size-3 bg-[#c8d600]"></span>
+        <span>Contact</span>
+      </div>
+      <h1 class="text-5xl font-semibold leading-[0.98] tracking-tight text-[#263238] sm:text-6xl lg:text-7xl">
+        Contactez<br />
+        <span class="text-[#00a7e1]">Bugzero</span>
+      </h1>
+      <p class="mt-8 max-w-2xl text-xl leading-relaxed text-[#52636b]">
+        Une question, un ordi en panne, un projet web ? On vous répond dans l'heure.
+      </p>
+      <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+        <a href="tel:+33678565430" class="inline-flex h-15 items-center justify-center rounded-md bg-[#00a7e1] px-7 text-lg font-medium text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
+          Nous appeler
+          <i data-lucide="arrow-right" class="ml-3 size-5"></i>
+        </a>
+        <a href="mailto:bonjour@bugzero.fr" class="inline-flex h-15 items-center justify-center rounded-md border border-[#00a7e1] bg-white px-7 text-lg font-medium text-[#00a7e1] transition hover:bg-[#eaf8fd]">
+          Nous écrire
+          <i data-lucide="arrow-right" class="ml-3 size-5"></i>
+        </a>
+      </div>
+    </div>
+    <div class="relative min-h-[25rem] overflow-hidden rounded-3xl border border-[#00a7e1]/20 bg-[#edfaff] sm:min-h-[31rem]">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_72%_35%,rgba(200,214,0,0.34),transparent_23%),radial-gradient(circle_at_35%_70%,rgba(0,167,225,0.18),transparent_43%)]"></div>
+      <div class="absolute left-[12%] right-[12%] top-1/2 h-px bg-[#00a7e1]/25"></div>
+      <div class="absolute left-1/2 top-[10%] h-[80%] w-px bg-[#00a7e1]/25"></div>
+      <div class="absolute left-1/2 top-1/2 grid size-52 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border-2 border-[#00a7e1]/35 bg-white shadow-[0_25px_60px_rgba(0,167,225,0.18)] sm:size-64">
+        <div class="grid size-[76%] place-items-center rounded-full border border-[#c8d600] bg-[#00a7e1]">
+          <i data-lucide="mail" class="size-20 text-white sm:size-24"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coordonnées + Formulaire -->
+  <section class="px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-[112rem]">
+      <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div>
+          <SectionLabel text="Nos coordonnées" />
+          <SectionTitle text="Plusieurs façons de nous joindre." />
+          <div class="mt-8 space-y-6">
+            <a href="tel:+33678565430" class="flex items-start gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-xl bg-[#00a7e1] text-white"><i data-lucide="phone" class="size-5"></i></span>
+              <span>
+                <span class="block text-sm uppercase tracking-[0.16em] text-[#52636b]">Téléphone</span>
+                <span class="block text-lg font-semibold text-[#263238]">06 78 56 54 30</span>
+              </span>
+            </a>
+            <a href="mailto:bonjour@bugzero.fr" class="flex items-start gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-xl bg-[#c8d600] text-[#263238]"><i data-lucide="mail" class="size-5"></i></span>
+              <span>
+                <span class="block text-sm uppercase tracking-[0.16em] text-[#52636b]">Email</span>
+                <span class="block text-lg font-semibold text-[#263238]">bonjour@bugzero.fr</span>
+              </span>
+            </a>
+            <div class="flex items-start gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-xl bg-[#263238] text-white"><i data-lucide="map-pin" class="size-5"></i></span>
+              <span>
+                <span class="block text-sm uppercase tracking-[0.16em] text-[#52636b]">Adresse</span>
+                <span class="block text-lg font-semibold text-[#263238]">9, Allée Lazare Sauvaigo, 98000 Monaco</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-[#00a7e1]/15 bg-white p-8 shadow-sm sm:p-10">
+          <SectionLabel text="Formulaire" />
+          <h3 class="text-2xl font-semibold text-[#263238] sm:text-3xl">Écrivez-nous</h3>
+          <form action="mailto:bonjour@bugzero.fr" method="post" enctype="text/plain" class="mt-6 space-y-5">
+            <div>
+              <label for="nom" class="block text-sm font-medium text-[#52636b]">Nom</label>
+              <input id="nom" name="nom" type="text" required class="mt-2 w-full rounded-md border border-[#00a7e1]/30 bg-white px-4 py-3 text-[#263238] outline-none transition focus:border-[#00a7e1] focus:ring-2 focus:ring-[#00a7e1]/20" />
+            </div>
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="email" class="block text-sm font-medium text-[#52636b]">Email</label>
+                <input id="email" name="email" type="email" required class="mt-2 w-full rounded-md border border-[#00a7e1]/30 bg-white px-4 py-3 text-[#263238] outline-none transition focus:border-[#00a7e1] focus:ring-2 focus:ring-[#00a7e1]/20" />
+              </div>
+              <div>
+                <label for="tel" class="block text-sm font-medium text-[#52636b]">Téléphone</label>
+                <input id="tel" name="tel" type="tel" class="mt-2 w-full rounded-md border border-[#00a7e1]/30 bg-white px-4 py-3 text-[#263238] outline-none transition focus:border-[#00a7e1] focus:ring-2 focus:ring-[#00a7e1]/20" />
+              </div>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-[#52636b]">Message</label>
+              <textarea id="message" name="message" rows="5" required class="mt-2 w-full rounded-md border border-[#00a7e1]/30 bg-white px-4 py-3 text-[#263238] outline-none transition focus:border-[#00a7e1] focus:ring-2 focus:ring-[#00a7e1]/20"></textarea>
+            </div>
+            <button type="submit" class="inline-flex h-14 items-center justify-center rounded-md bg-[#00a7e1] px-8 text-lg font-semibold text-white shadow-[0_14px_30px_rgba(0,167,225,0.2)] transition hover:bg-[#008fc7]">
+              Envoyer
+              <i data-lucide="send" class="ml-3 size-5"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="px-6 pt-20 sm:px-10 lg:px-16 lg:pt-24">
+    <div class="mx-auto max-w-[112rem]">
+      <Footer />
+    </div>
+  </section>
+</Layout>
